@@ -4,9 +4,8 @@ __pycache__/
 .env
 venv/
 .venv/
-*.keras
-*.h5
+# keep model and data — needed for deployment
+# *.keras
+# *.csv
 *.pkl
-data/
-*.csv
 .DS_Store

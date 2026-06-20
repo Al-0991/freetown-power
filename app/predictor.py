@@ -7,9 +7,8 @@ import tensorflow as tf
 import os
 from app.data_loader import classify_risk, risk_label, risk_color, FEATURES
 
-MODEL_PATH = os.path.expanduser(
-    "~/Desktop/work/hourly_pipeline/models/cnn_bilstm_v3/best_v3.keras"
-)
+BASE_DIR   = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODEL_PATH = os.path.join(BASE_DIR, "model", "best_v3.keras")
 
 _model = None
 

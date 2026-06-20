@@ -7,7 +7,8 @@ import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 import os
 
-DATA_PATH = os.path.expanduser("~/Desktop/work/hourly_pipeline/data/hourly_clean.csv")
+BASE_DIR  = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_PATH = os.path.join(BASE_DIR, "data", "hourly_clean.csv")
 
 FEATURES = [
     'utilized_mw', 'hour_sin', 'hour_cos', 'dow_sin', 'dow_cos',
